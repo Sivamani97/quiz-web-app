@@ -60,7 +60,14 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
+body {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Old versions of Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
         /* Welcome Screen */
         #start-screen h1 {
             font-size: 2.5rem;
@@ -499,4 +506,5 @@
         restartBtn.addEventListener('click', startQuiz);
     </script>
 </body>
+
 </html>
